@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
+import { HashRouter as Router } from 'react-router-dom';
+
 
 import MainPage from './pages/MainPage';
 import LoginPage from './pages/LoginPage';
@@ -7,7 +9,7 @@ import RegisterPage from './pages/RegisterPage';
 import BookDetail from './pages/BookDetail';
 import MoreRecommend from './pages/MoreRecommend';
 import MoreRisk from './pages/MoreRisk';
-import MyPage from './pages/MyPage'; // 추가
+import MyPage from './pages/MyPage';
 
 function App() {
   return (
