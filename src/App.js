@@ -1,5 +1,5 @@
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
-import { HashRouter as Router } from 'react-router-dom';
 
 
 import MainPage from './pages/MainPage';
