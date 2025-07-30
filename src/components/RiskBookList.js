@@ -104,6 +104,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     gap: '1rem',
+    alignItems: 'center'
   },
   card: {
     display: 'flex',
@@ -113,7 +114,7 @@ const styles = {
     boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
     alignItems: 'center',
     width: '100%',
-    maxWidth: '530px',
+    maxWidth: '450px',
     margin: '0 auto',
   },
   image: {

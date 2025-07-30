@@ -12,11 +12,11 @@ code {
     monospace;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 744px) {
   body {
     transform-origin: top left;
-    transform: scale(0.5);
-    width: 200%;
+    transform: scale(0.6);
+    width: 166.67%;
     overflow-x: hidden;
     font-size: 50%;
   }
