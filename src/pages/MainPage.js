@@ -9,11 +9,11 @@ function MainPage() {
   const user = dummyUsers[0];
 
   return (
-    <div>
+    <div style={{ boxSizing: 'border-box' }}>
       <TopBar />
       <SearchBar />
       <BookRecommend books={dummyBooks} userName={user.name} />
-      <div style={{ padding: '1rem 5rem' }}>
+      <div style={{ padding: '1rem', maxWidth: '1200px', margin: '0 auto' }}>
         <RiskBookList books={dummyBooks} />
       </div>
     </div>

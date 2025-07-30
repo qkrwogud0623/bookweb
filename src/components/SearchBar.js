@@ -163,7 +163,9 @@ const styles = {
     marginTop: '2rem',
     display: 'flex',
     justifyContent: 'center',
-    userSelect: 'none'
+    userSelect: 'none',
+    padding: '0 1rem', 
+    boxSizing: 'border-box',
   },
   inputWrapper: {
     background: '#D9D9D9',
@@ -172,9 +174,10 @@ const styles = {
     border: '1px solid #ccc',
     borderRadius: '8px',
     overflow: 'visible',
-    width: '600px',
+    width: '100%', 
+    maxWidth: '600px',  
     userSelect: 'none',
-    position: 'relative'
+    position: 'relative',
   },
   input: {
     color: '#3D3D3D',

@@ -20,11 +20,11 @@ function BookRecommend({ books }) {
   const displayName = savedUser?.name || '사용자';
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '4rem' }}>
-      <h2 style={{ fontSize: '30px', fontWeight: 800 }}>
+    <div style={styles.wrapper}>
+      <h2 style={styles.heading}>
         {displayName}님을 위한 추천 도서
       </h2>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '1rem 0' }}>
+      <div style={styles.container}>
         <button onClick={prev} style={styles.arrow}>
           <FaChevronLeft size={20} />
         </button>
@@ -38,9 +38,9 @@ function BookRecommend({ books }) {
         </button>
       </div>
 
-      <div style={{ textAlign: 'center', paddingLeft: '31rem', fontSize: '14px' }}>
+      <div style={styles.moreWrapper}>
         <Link to="/more/recommend" style={{ textDecoration: 'none' }}>
-          <button style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#555' }}>
+          <button style={styles.moreButton}>
             더보기
           </button>
         </Link>
@@ -50,13 +50,43 @@ function BookRecommend({ books }) {
 }
 
 const styles = {
+  wrapper: {
+    padding: '0 1rem',
+    boxSizing: 'border-box',
+    textAlign: 'center',
+    marginTop: '4rem',
+  },
+  heading: {
+    fontSize: '30px',
+    fontWeight: 800,
+  },
+  container: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    margin: '1rem 0',
+    gap: '0.5rem',
+    overflowX: 'auto', // 모바일에서 좌우 스크롤 가능
+  },
   arrow: {
     background: 'none',
     border: 'none',
     cursor: 'pointer',
     color: '#555',
-    padding: '0 10px'
-  }
+    padding: '0 10px',
+    flexShrink: 0,
+  },
+  moreWrapper: {
+    textAlign: 'center',
+    paddingLeft: 0,
+    fontSize: '14px',
+  },
+  moreButton: {
+    background: 'none',
+    border: 'none',
+    cursor: 'pointer',
+    color: '#555',
+  },
 };
 
 export default BookRecommend;

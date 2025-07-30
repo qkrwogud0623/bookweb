@@ -103,14 +103,17 @@ const styles = {
     alignItems: 'center',
     background: '#fff',
     fontFamily: 'Pretendard Variable',
-    userSelect: 'none'
+    userSelect: 'none',
+    padding: '0 1rem',
+    boxSizing: 'border-box'
   },
   card: {
     backgroundColor: '#D9D9D9',
     borderRadius: '20px',
     padding: '2rem 3rem',
     boxShadow: '0 8px 16px rgba(0,0,0,0.1)',
-    width: '350px',
+    width: '100%',
+    maxWidth: '350px',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center'

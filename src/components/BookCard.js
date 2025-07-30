@@ -8,10 +8,12 @@ function BookCard({ id, image, title, author, isCenter }) {
         transform: isCenter ? 'scale(1.00)' : 'scale(0.75)',
         transition: 'transform 0.2s',
         margin: '0 10px',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        width: '100%',
+        maxWidth: '140px',
       }}>
         <div style={{
-          width: '140px',
+          width: '100%',
           height: '200px',
           overflow: 'hidden',
           borderRadius: '6px',

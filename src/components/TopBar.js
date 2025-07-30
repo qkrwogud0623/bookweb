@@ -46,12 +46,14 @@ function TopBar() {
 const styles = {
   container: {
     backgroundColor: '#D9D9D9',
-    padding: '8px 20px',
+    padding: '8px 1rem',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
     fontSize: '14px',
-    userSelect: 'none'
+    userSelect: 'none',
+    boxSizing: 'border-box',
+    width: '100%',
   },
   homeIcon: {
     background: 'none',
@@ -60,15 +62,18 @@ const styles = {
     padding: 0,
     margin: 0,
     userSelect: 'none',
-    display: 'flex', 
-    alignItems: 'center', 
-    justifyContent: 'center', 
-    height: '100%'
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '100%',
   },
   rightMenu: {
     display: 'flex',
     alignItems: 'center',
-    gap: '0.5rem'
+    gap: '0.5rem',
+    flexWrap: 'wrap',
+    justifyContent: 'flex-end',
+    minWidth: 0,
   },
   link: {
     background: 'none',
@@ -77,7 +82,9 @@ const styles = {
     cursor: 'pointer',
     userSelect: 'none',
     fontFamily: 'Pretendard Variable',
-    fontWeight: 700
+    fontWeight: 700,
+    whiteSpace: 'nowrap',
+    minWidth: 0,
   }
 };
 

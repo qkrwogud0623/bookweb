@@ -50,7 +50,7 @@ function RiskBookList({ books }) {
         ))}
       </div>
 
-      <div style={{ textAlign: 'center', paddingLeft: '31rem', fontSize: '14px' }}>
+      <div style={{ textAlign: 'center', fontSize: '14px' }}>
         <Link to="/more/risk" style={{ textDecoration: 'none' }}>
           <button style={{ 
             marginTop: 5,
@@ -86,7 +86,8 @@ const styles = {
     borderRadius: '8px',
     boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
     alignItems: 'center',
-    width: '530px',
+    width: '100%', 
+    maxWidth: '530px',
     margin: '0 auto'
   },
   image: {
