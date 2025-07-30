@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import BookCard from './BookCard';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-function BookRecommend({ books, userName }) {
+function BookRecommend({ books }) {
   const [index, setIndex] = useState(0);
 
   const length = books.length;
@@ -16,10 +16,13 @@ function BookRecommend({ books, userName }) {
     return books[i];
   };
 
+  const savedUser = JSON.parse(localStorage.getItem('user'));
+  const displayName = savedUser?.name || '사용자';
+
   return (
     <div style={{ textAlign: 'center', marginTop: '4rem' }}>
       <h2 style={{ fontSize: '30px', fontWeight: 800 }}>
-        {userName}님을 위한 추천 도서
+        {displayName}님을 위한 추천 도서
       </h2>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '1rem 0' }}>
         <button onClick={prev} style={styles.arrow}>

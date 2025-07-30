@@ -5,7 +5,7 @@ function BookCard({ id, image, title, author, isCenter }) {
     <Link to={`/book/${id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
       <div style={{
         textAlign: 'center',
-        transform: isCenter ? 'scale(1.05)' : 'scale(0.75)',
+        transform: isCenter ? 'scale(1.00)' : 'scale(0.75)',
         transition: 'transform 0.2s',
         margin: '0 10px',
         cursor: 'pointer'

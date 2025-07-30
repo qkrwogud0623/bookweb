@@ -3,7 +3,7 @@ const dummyBooks = [
     id: '1',
     title: '문성경',
     author: '문성경',
-    image: '/bookweb/covers/a1.png',  // ✅ 변경
+    image: '/bookweb/covers/a1.png',
     publisher: '출판사A',
     publishedDate: '0000.00.00',
     isbn: '9780000000001',
@@ -17,7 +17,7 @@ const dummyBooks = [
     id: '2',
     title: '박재형',
     author: '박재형',
-    image: '/bookweb/covers/a2.png',  // ✅ 변경
+    image: '/bookweb/covers/a2.png',
     publisher: '출판사B',
     publishedDate: '1111.11.11',
     isbn: '9780000000002',
@@ -31,7 +31,7 @@ const dummyBooks = [
     id: '3',
     title: '정도웅',
     author: '정도웅',
-    image: '/bookweb/covers/a3.png',  // ✅ 변경
+    image: '/bookweb/covers/a3.png',
     publisher: '출판사C',
     publishedDate: '2222.22.22',
     isbn: '9780000000003',
@@ -45,7 +45,7 @@ const dummyBooks = [
     id: '4',
     title: '정진호',
     author: '정진호',
-    image: '/bookweb/covers/a4.png',  // ✅ 변경
+    image: '/bookweb/covers/a4.png',
     publisher: '출판사D',
     publishedDate: '3333.33.33',
     isbn: '9780000000004',
