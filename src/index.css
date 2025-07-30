@@ -15,8 +15,9 @@ code {
 @media (max-width: 768px) {
   body {
     transform-origin: top left;
-    transform: scale(0.5); 
-    width: 200%;   
-    overflow-x: hidden;    
+    transform: scale(0.5);
+    width: 200%;
+    overflow-x: hidden;
+    font-size: 50%;
   }
 }
