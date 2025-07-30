@@ -175,7 +175,7 @@ const styles = {
     borderRadius: '8px',
     overflow: 'visible',
     width: '100%', 
-    maxWidth: '600px',  
+    maxWidth: '570px',  
     userSelect: 'none',
     position: 'relative',
   },
